@@ -12,7 +12,7 @@ typedef struct treenode
 	struct treenode *left;
 }treenode;
 bool treefind(treenode *root,int num);
-bool treeprint(treenode *root,int levels, int side);
+bool treeprint(treenode *root/*,int levels, int side*/);
 bool treeinsert(treenode *root, int num);
 treenode *treecreate(int num);
 char *sidename(int side);
@@ -27,7 +27,7 @@ int main(void)
 	treeinsert(root,13);
 	printf("12 is there is %s\n",treefind(root,12)?"true":false);
 	//printf("11 is there is %s\n",treefind(root,11)?"true":false);
-	treeprint(root,0,SIDE_MAIN);
+	treeprint(root/*,0,SIDE_MAIN*/);
 }
 treenode *treecreate(int num)
 {
@@ -75,23 +75,26 @@ bool treefind(treenode *root, int num)
 	return false;
 }	
 
-bool treeprint(treenode *root,int levels,int side)
+bool treeprint(treenode *root/*,int levels,int side*/)
 {
-		printf("%s%s:%d",treelevel(levels),sidename(side),root->num);
+		printf("%d\n",root->num);
+		/*
 		if(root->left==NULL)
 		{
 			printf("--------");
 			return true;
 		}
 		else
-			treeprint(root->left,0,SIDE_LEFT);
+		*/
+		treeprint(root->left/*,0,SIDE_LEFT*/);
 		if(root->right==NULL)
 		{
 			printf("--------");
 			return true;
 		}
 		else
-			treeprint(root->right,0,SIDE_RIGHT);
+			treeprint(root->right/*,0,SIDE_RIGHT*/);
+		//printf("%s%s:%d",treelevel(levels),sidename(side),root->num);
 		return true;
 }
 char *treelevel(int num)
