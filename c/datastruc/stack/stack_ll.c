@@ -9,36 +9,38 @@ typedef struct node
 	struct node *next;
 }node;
 
-node *create(void);
+node *llcreate(void);
 bool push(int num);
 int pop();
+void printinfo();
 
-node *top=create();
-node *lastnode=create();
-int main(void)
+node *llcreate(void)
 {
-	push(0);
-	push(2);
-	push(3);
-	push(12);
-
-	int pop_val;
-	while((pop_val=pop())!=INT_MIN)
-	{
-		printf("%d\n",pop());
-	}
-}
-
-node *create(void)
-{
-	node *tmp=malloc(sizeof(node));
+	node *tmp;
+	tmp=malloc(sizeof(node));
+	tmp->val=0;
 	tmp->next=NULL;
 	return tmp;
 }
 
+
+node *top;
+int main(void)
+{
+	top=llcreate();
+	for(int i=0;i<100;i+=7)
+		push(i);
+	printf(">>>>>>>> NUMBER >>>>>>>>\n");
+	int pop_val;
+	while((pop_val=pop())!=0)
+	{
+		printf(">>>>>>>>%8d>>>>>>>>\n",pop_val);
+	}
+
+}
+
 bool push(int num)
 {
-	lastnode=head;
 	node *tmp = malloc(sizeof(node));
 	tmp->val=num;
 	tmp->next=top;
@@ -48,8 +50,8 @@ bool push(int num)
 
 int  pop()
 {
-	head=lastnode;
-	return head->val;
+	int topval=top->val;
+	top=top->next;
+	return topval;
 }
 
-	
