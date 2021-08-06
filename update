@@ -1,5 +1,8 @@
-#!/bin/sh
+#!/usr/bin/env bash
+cd /home/anshul/code
+echo $PWD `date` >> /home/anshul/pwd
 git add .
 git commit -a -m "autoupdate `date +%F-%T`"
 git push
 git push -u origin master
+echo done: $PWD `date` >> /home/anshul/pwd
