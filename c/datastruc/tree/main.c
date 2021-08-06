@@ -14,16 +14,28 @@ treenode *treecreate(int num);
 
 int main(void)
 {
-	treenode *root=treecreate(10);
-	treeinsert(root,15);
-	treeinsert(root,100);
-	treeinsert(root,12);
-	treeinsert(root,14);
-	treeinsert(root,13);
-	
-	treeinsert(root,8);
-	treeinsert(root,3);
-	treeinsert(root,1);
+	treenode *root=NULL;
+	int num=0;
+	while(num!=-1)
+	{
+		scanf("%d",&num);
+		if(num!=-1)
+		{
+			if(root==NULL)
+				root=treecreate(num);
+			else
+				treeinsert(root,num);
+		}
+	}
+	printf("---\n");
+	num=0;
+	while(num!=-1)
+	{
+		scanf("%d",&num);
+		printf("%s\n",treefind(root,num)==true?"true":"false");
+	}
+	printf("---\n");
+	printf("Table:\n");
 	treeprint(root);
 }
 treenode *treecreate(int num)
