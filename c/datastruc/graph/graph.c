@@ -7,7 +7,8 @@ bool ifconnected(bool paths[MAX_VERTEX][MAX_VERTEX],int x,int y);
 int main(void)
 {
 	int list[MAX_VERTEX]={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19};
-	bool paths[MAX_VERTEX][MAX_VERTEX];
+	bool *(paths[MAX_VERTEX]);//[MAX_VERTEX];
+	paths[1][2]=7;
 	connect(&paths,0,5);
 	connect(&paths,2,5);
 	connect(&paths,7,8);
