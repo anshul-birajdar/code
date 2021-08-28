@@ -10,7 +10,7 @@ int main(void)
 		printf("%s\n",commands[i]);
 }
 	
-void separate(char input[],char *commands[][])
+void separate(char *input,char *commands[][])
 {
 	int index,i;
 	for(i=0;input[i]!=NULL;i++)
