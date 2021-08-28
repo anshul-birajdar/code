@@ -6,14 +6,14 @@ int main(void)
 	printf("]");
 	scanf("%[^\n]s",input);
 	separate(input,&commands);
-	for(int i=0;commands[i]!=-1;i++)
+	for(int i=0;commands[i][0]!=-1;i++)
 		printf("%s\n",commands[i]);
 }
 	
 void separate(char *input,char *commands[][])
 {
 	int index,i;
-	for(i=0;input[i]!=NULL;i++)
+	for(i=0;input[i]!='\0';i++)
 	{
 		if(input[i]==' ')
 		{
