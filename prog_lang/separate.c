@@ -1,5 +1,5 @@
 #include<stdio.h>
-void separate(char *input,char *commands[][]);
+void separate(char *input,char ***commands);
 int main(void)
 {
 	char input[1000];
@@ -11,7 +11,7 @@ int main(void)
 		printf("%s\n",commands[i]);
 }
 	
-void separate(char *input,char *commands[][])
+void separate(char *input,char ***commands)
 {
 	int index,i;
 	for(i=0;input[i]!='\0';i++)
@@ -23,9 +23,9 @@ void separate(char *input,char *commands[][])
 		}
 		*(commands)[index][i]=input[i];
 	}
-	*(commands)[index][i]=NULL;
-	*(commands)[index][i+1]=NULL;
-	*(commands)[index+1]=NULL;
+	*(commands)[index][i]='\0';
+	*(commands)[index][i+1]='\0';
+	//*(commands)[index+1]=NULL;
 	return;
 }
 
