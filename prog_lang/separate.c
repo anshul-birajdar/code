@@ -2,7 +2,7 @@
 int main(void)
 {
 	char input[1000];
-	char *commands[5][1000];
+	char commands[5][1000];
 	printf("]");
 	scanf("%[^\n]s",input);
 	separate(input,&commands);
