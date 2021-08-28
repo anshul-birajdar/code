@@ -1,4 +1,5 @@
 #include<stdio.h>
+void separate(char *input,char *commands[][]);
 int main(void)
 {
 	char input[1000];
