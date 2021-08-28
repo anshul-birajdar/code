@@ -4,9 +4,10 @@ int main(void)
 {
 	char input[1000];
 	char commands[5][1000];
+	char ***pcommands=&commands;
 	printf("]");
 	scanf("%[^\n]s",input);
-	separate(input,&commands);
+	separate(input,pcommands);
 	for(int i=0;commands[i][0]!=-1;i++)
 		printf("%s\n",commands[i]);
 }
