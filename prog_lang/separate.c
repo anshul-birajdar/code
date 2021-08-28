@@ -6,7 +6,8 @@ int main(void)
 	char commands[5][1000];
 	char ***pcommands=&commands;
 	printf("]");
-	scanf("%[^\n]s",input);
+	//scanf("%[^\n]s",input);
+	gets(input);
 	separate(input,pcommands);
 	for(int i=0;commands[i][0]!=-1;i++)
 		printf("%s\n",commands[i]);
