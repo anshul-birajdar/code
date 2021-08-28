@@ -6,7 +6,7 @@ int main(void)
 	printf("]");
 	scanf("%[^\n]s",input);
 	separate(input,&commands);
-	for(int i=0;commands[i]!=NULL;i++)
+	for(int i=0;commands[i]!=-1;i++)
 		printf("%s\n",commands[i]);
 }
 	
@@ -17,7 +17,7 @@ void separate(char input[],char *commands[][])
 	{
 		if(input[i]==' ')
 		{
-			*(commands)[index][i]=NULL;
+			*(commands)[index][i]=-1;
 			index++;
 		}
 		*(commands)[index][i]=input[i];
