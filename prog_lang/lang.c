@@ -23,7 +23,7 @@ int main(void)
 		loc++;
 		bufloc++;
 	}
-	printf("%s\n%s\n",buf[0],buf[1]);
+	printf("%s\n%s\n",commands[0],commands[1]);
 }
 	
 	
