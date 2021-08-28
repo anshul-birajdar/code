@@ -15,6 +15,7 @@ int main(void)
 void separate(char *input,char ***commands)
 {
 	int index,i;
+	index=0;
 	for(i=0;input[i]!='\0';i++)
 	{
 		if(input[i]==' ')
