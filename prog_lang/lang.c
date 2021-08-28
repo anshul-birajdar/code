@@ -3,7 +3,7 @@
 int main(void)
 {
 	char buf[MAXBUF];
-	scanf("%[^\n]s",&buf);
+	scanf("%[^\n]s",buf);
 	char commands[2][MAXBUF];
 	int index=0;
 	int loc=0;
