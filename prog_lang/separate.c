@@ -20,8 +20,9 @@ void separate(char *input,char ***commands)
 	{
 		if(input[i]==' ')
 		{
-			*(commands)[index][i]=-1;
+			*(commands)[index][i]='\0';
 			index++;
+			continue;
 		}
 		*(commands)[index][i]=input[i];
 	}
