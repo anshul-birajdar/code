@@ -12,7 +12,7 @@ int main(void)
 		fgets(line,MAXLINE,stdin);
 		bcd_rem_newline(line);
 		//if(bcd_getif_eof(line)==true)
-		if(line==NULL||*line=NULL)
+		if(line==NULL||*line==NULL)
 			exit(EXIT_SUCCESS);
 		printf("%s\n",line);
 	}
