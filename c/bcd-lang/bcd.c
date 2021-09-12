@@ -6,7 +6,7 @@ int main(void)
 	char line[MAXLINE];
 	for(;;)
 	{
-		//scanf("%s",line);
+		printf("INPUT>");
 		fgets(line,MAXLINE,stdin);
 		bcd_rem_newline(line);
 		printf("%s\n",line);
