@@ -11,7 +11,7 @@ int main(void)
 		printf("INPUT>");
 		fgets(line,MAXLINE,stdin);
 		bcd_rem_newline(line);
-		if(line==NULL)
+		if(line==NULL||*line==NULL)
 			continue;
 		printf("%s\n",line);
 	}
