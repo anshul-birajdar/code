@@ -8,6 +8,6 @@ while True:
 	if t=="store":acc=int(tokens[1])
 	if t=="add":acc+=int(tokens[1])
 	if ":" in t:lines[t[:-1]]=tokens[1:]
-	
+	if t=="lines":print(lines)	
 		
 
