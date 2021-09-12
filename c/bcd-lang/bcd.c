@@ -6,15 +6,16 @@
 #define MAXTOKEN 2
 int main(void)
 {
-	char *c;
+	//char *c;
 	char line[MAXLINE];
 	char tokens[MAXTOKEN][MAXLINE];
-	int currentoken=0;
-	int currentchar=0;
-	int ntokens=0;	
+	//int currentoken=0;
+	//int currentchar=0;
+	int ntokens=0;
 	for(;;)
 	{
 		if(bcd_getline(line,MAXLINE)==true||*line=='\0')continue;
+		/*
 		c=line;
 		while(1)
 		{
@@ -31,7 +32,9 @@ int main(void)
 			}
 			else tokens[currentoken][currentchar++]=*c++;
 			
-		}		
+		}
+		*/
+		ntokens=bcd_maketokens(line,tokens);		
 		printf("LINE=%s\n",line);
 		printf("NTOKENS=%d",ntokens);
 	}
