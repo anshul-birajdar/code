@@ -16,7 +16,7 @@ int main(void)
 			continue;
 		if(bcd_getif_eof(line))
 			exit(EXIT_SUCCESS);
-		printf("::LINE::%s::ENDLINE::",line);
+		printf("%s\n",line);
 	}
 	return 0;
 }
