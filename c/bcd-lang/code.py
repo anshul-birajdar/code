@@ -10,6 +10,7 @@ def exec(command):
 	if t=="add":acc+=int(tokens[1])
 	if t[-1]==":":lines[t[:-1]]=tokens[1] # 1:
 	if t=="run":
+		tokens=tokens[1:]
 		for line in lines:
 			print(lines[line])
 while True:
