@@ -18,7 +18,7 @@ int main(void)
 		c=line;
 		while(1)
 		{
-			if(*c=='\n')
+			if(*c==' ')
 			{
 				currentoken++;
 				currentchar=0;
