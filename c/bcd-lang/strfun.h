@@ -24,3 +24,17 @@ bool bcd_getif_eof(char *line)
 	return false;
 	*/
 }
+
+void bcd_getline(char *line,int maxline)
+{
+		char c;
+                printf("INPUT>");
+                fgets(line,MAXLINE,stdin);
+                bcd_rem_newline(line);
+                if(line==NULL)
+                        continue;
+                if(bcd_getif_eof(line))
+                        exit(EXIT_SUCCESS);
+                return;
+}
+
