@@ -29,7 +29,7 @@ void bcd_getline(char *line,int maxline)
 {
 		char c;
                 printf("INPUT>");
-                fgets(line,MAXLINE,stdin);
+                fgets(line,maxline,stdin);
                 bcd_rem_newline(line);
                 if(line==NULL)
                         continue;
