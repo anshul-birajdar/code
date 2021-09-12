@@ -32,7 +32,8 @@ int main(void)
 			else tokens[currentoken][currentchar++]=*c++;
 			
 		}		
-		printf("%s\n",line);
+		printf("LINE=%s\n",line);
+		printf("NTOKENS=%d",ntokens);
 	}
 	return 0;
 }
