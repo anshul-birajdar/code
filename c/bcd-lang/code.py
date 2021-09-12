@@ -12,7 +12,7 @@ def exec(command):
 	if t=="run":
 		tokens=tokens[1:]
 		for line in lines:
-			print(lines[line])
+			exec(lines[line])
 while True:
 	val=input(">");
 	exec(val);
