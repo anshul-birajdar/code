@@ -31,8 +31,8 @@ void bcd_getline(char *line,int maxline)
                 printf("INPUT>");
                 fgets(line,maxline,stdin);
                 bcd_rem_newline(line);
-                if(line==NULL)
-                        continue;
+                //if(line==NULL)
+                //        continue;
                 if(bcd_getif_eof(line))
                         exit(EXIT_SUCCESS);
                 return;
