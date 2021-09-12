@@ -6,4 +6,6 @@ while True:
 	if t=="print":print(acc)
 	if t=="store":acc=int(tokens[1])
 	if t=="add":acc+=int(tokens[1])
+	if ":" in t:print(t[:-1])
+
 
