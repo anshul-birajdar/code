@@ -5,7 +5,8 @@ int main(void)
 	char line[MAXLINE];
 	for(;;)
 	{
-		scanf("%s",line);
+		//scanf("%s",line);
+		fgets(line,MAXLINE,stdin);
 		printf("%s\n",line);
 	}
 	return 0;
