@@ -14,7 +14,7 @@ int main(void)
 		bcd_rem_newline(line);
 		if(line==NULL)//||feof(stdin))
 			continue;
-		if(bsd_getif_eof)
+		if(bcd_getif_eof(line))
 			exit(EXIT_SUCCESS);
 		printf("%s\n",line);
 	}

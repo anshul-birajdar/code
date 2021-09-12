@@ -16,9 +16,9 @@ bool bcd_getif_eof(char *line)
 {
 	if(feof(stdin))
 		return true;
-	int c = getc(stdin);
-	if (c == EOF)
+	int c=getc(stdin);
+	if (c==EOF)
 		return true;
-	ungetc(c, stdin);
-	return false
+	ungetc(c,stdin);
+	return false;
 }
