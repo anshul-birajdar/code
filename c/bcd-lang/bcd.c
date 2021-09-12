@@ -12,8 +12,8 @@ int main(void)
 		printf("INPUT>");
 		fgets(line,MAXLINE,stdin);
 		bcd_rem_newline(line);
-		//if(line==NULL)//||feof(stdin))
-		//	continue;
+		if(line==NULL)
+			continue;
 		if(bcd_getif_eof(line))
 			exit(EXIT_SUCCESS);
 		printf("%s",line);
