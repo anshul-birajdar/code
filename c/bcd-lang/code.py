@@ -1,7 +1,7 @@
 acc=0;
 while True:
 	val=input(">");
-	tokens=split(val);
+	tokens=val.split()
 	t=tokens[0]
 	if t=="print":print(acc)
 	if t=="store":acc=int(tokens[1])
