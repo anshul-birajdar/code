@@ -12,4 +12,12 @@ void bcd_rem_newline(char *line)
 	}
 }
 
+bool bcd_getif_eof(char *line)
+{
+	char *c=line;
+	while(*c!='\0')
+		if(c==EOF)
+			return true;
+	return false;
+}
 
