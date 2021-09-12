@@ -11,7 +11,7 @@ def exec(command):
 	if t[-1]==":":lines[t[:-1]]=tokens[1] # 1:
 	if t=="run":
 		for line in lines:
-			exec(lines[line])
+			print(lines[line])
 while True:
 	val=input(">");
 	exec(val);
