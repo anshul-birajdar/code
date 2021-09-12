@@ -1,6 +1,7 @@
 acc=0;
 lines={}
 def exec(command):
+	global acc,lines
 	tokens=val.split()
 	t=tokens[0]
 	if t=="do":pass
