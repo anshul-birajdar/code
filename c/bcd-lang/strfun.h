@@ -1,3 +1,5 @@
+#define ISNULL true
+#define ISNOTNULL false
 void bcd_rem_newline(char *line)
 {
 	char *c=line;
@@ -25,16 +27,16 @@ bool bcd_getif_eof(char *line)
 	*/
 }
 
-void bcd_getline(char *line,int maxline)
+bool bcd_getline(char *line,int maxline)
 {
 		char c;
                 printf("INPUT>");
                 fgets(line,maxline,stdin);
                 bcd_rem_newline(line);
-                //if(line==NULL)
-                //        continue;
+                if(line==NULL)
+                        return ISNULL;
                 if(bcd_getif_eof(line))
                         exit(EXIT_SUCCESS);
-                return;
+                return ISNOTNULL;
 }
 
