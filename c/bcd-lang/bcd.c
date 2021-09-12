@@ -9,16 +9,7 @@ int main(void)
 	char line[MAXLINE];
 	for(;;)
 	{
-		/*
-		printf("INPUT>");
-		fgets(line,MAXLINE,stdin);
-		bcd_rem_newline(line);
-		if(line==NULL)
-			continue;
-		if(bcd_getif_eof(line))
-			exit(EXIT_SUCCESS);
-		*/
-		bcd_getline(line,MAXLINE);
+		if(bcd_getline(line,MAXLINE)==true)continue;
 		printf("%s\n",line);
 	}
 	return 0;
