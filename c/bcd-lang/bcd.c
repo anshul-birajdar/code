@@ -10,7 +10,7 @@ int main(void)
 	for(;;)
 	{
 		if(bcd_getline(line,MAXLINE)==true)continue;
-		printf("%s\n",line);
+		printf("%s",line);
 	}
 	return 0;
 }
