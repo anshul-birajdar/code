@@ -9,8 +9,8 @@ int main(void)
 	char line[MAXLINE];
 	for(;;)
 	{
-		if(bcd_getline(line,MAXLINE)==true)continue;
-		printf("%s",line);
+		if(bcd_getline(line,MAXLINE)==true||*line=='\0')continue;
+		printf("%s\n",line);
 	}
 	return 0;
 }
