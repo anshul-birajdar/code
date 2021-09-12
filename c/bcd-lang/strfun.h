@@ -40,7 +40,7 @@ bool bcd_getline(char *line,int maxline)
 	return ISNOTNULL;
 }
 
-int bcd_maketokens(char *line,char tokens[][])
+int bcd_maketokens(char *line,char *tokens[])
 {
         char *c=line; 
         int currentoken=0;
