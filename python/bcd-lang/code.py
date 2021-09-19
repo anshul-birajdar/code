@@ -27,7 +27,8 @@ def exec(lines):
 				#"""
 				if(acc<float(line[1])):
 					print("TRUE")
-					i=int(line[2])
+					#i=int(line[2])
+					i=-1
 			
 	if(0):
 		print("ERROR")
