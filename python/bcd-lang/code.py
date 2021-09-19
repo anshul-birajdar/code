@@ -2,10 +2,10 @@ def exec(lines):print(lines)
 def convert(lines):
 	for i in range(0,len(lines)-1):
 		for j in range(0,len(lines[i])-1):
-			try:
-				lines[i][j]=float(lines[i][j])
-			except:
-				pass
+			#try:
+			lines[i][j]=float(lines[i][j])
+			#except:
+			#	pass
 	return lines
 			
 def main():
