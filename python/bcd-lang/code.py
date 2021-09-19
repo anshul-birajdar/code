@@ -6,6 +6,7 @@ def convert(lines):
 			lines[i][j]=float(lines[i][j])
 			#except:
 			#	pass
+	print(lines)
 	return lines
 			
 def main():
