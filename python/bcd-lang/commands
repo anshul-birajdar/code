@@ -1,0 +1,13 @@
+ldi 1
+store 11
+ldi 0
+print
+add 11
+store 12
+load 11
+store 10
+load 12
+store 11
+load 10
+jgt 50 0
+j 3
