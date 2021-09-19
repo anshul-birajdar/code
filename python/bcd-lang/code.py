@@ -3,12 +3,12 @@ memsize=100
 acc=0
 mem=[0]*memsize
 def exec(lines):
-	try:
+	if(1):
 		for line in lines:
 			c=line[0]
 			if c=="add":acc+=lines[1]
 			if c=="print":print(acc)
-	except:
+	if(0):
 		print("ERROR")
 		sys.exit()
 				
