@@ -32,9 +32,10 @@ def convert(lines):
 	return lines
 			
 def main():
+	lineno=1
 	lines = []
 	while True:
-		line=input()
+		line=input("["+str(lineno)+"]>")
 		if(line=="run"):
 			exec(lines)
 		else:
