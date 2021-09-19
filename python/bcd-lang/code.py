@@ -35,7 +35,7 @@ def convert(lines):
 	return lines
 			
 def main():
-	lineno=1
+	lineno=0
 	lines = []
 	while True:
 		line=input("["+str(lineno)+"]>")
