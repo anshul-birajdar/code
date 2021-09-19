@@ -22,6 +22,7 @@ def exec(lines):
 				print(line[1])
 				print(line[2])
 				if(acc<float(line[1])):
+					print("TRUE")
 					i=int(line[2])
 			
 	if(0):
