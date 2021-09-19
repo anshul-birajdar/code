@@ -22,7 +22,7 @@ def exec(lines):
 				print("ACC=",acc)
 				print(line[1])
 				print(line[2])
-				print(i)
+				print("I=",i)
 				#"""
 				if(acc<float(line[1])):
 					print("TRUE")
