@@ -15,7 +15,7 @@ def exec(lines):
 			if c=="add":acc+=float(line[1])
 			if c=="print":print(acc)
 			if c=="load":acc=mem[int(line[1])]
-			#if c=="ldi":print(int(line[1]))
+			if c=="ldi":acc=float(line[1])
 			if c=="store":mem[int(line[1])]=acc
 			if c=="jlt":
 				if(acc<float(line[1])):
