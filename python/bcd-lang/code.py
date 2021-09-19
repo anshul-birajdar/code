@@ -7,7 +7,7 @@ def exec(lines):
 	if(1):
 		for line in lines:
 			c=line[0]
-			if c=="add":acc+=float(lines[1][0])
+			if c=="add":acc+=float(line[1])
 			if c=="print":print(acc)
 	if(0):
 		print("ERROR")
