@@ -19,8 +19,9 @@ def main():
 		if(line=="run"):
 			lines=convert(lines)
 			exec(lines)
-		lines.append(line.split())
-		lines=convert(lines)
+		else:
+			lines.append(line.split())
+			lines=convert(lines)
 if(__name__=="__main__"):
 	main()
 	
