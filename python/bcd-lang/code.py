@@ -18,18 +18,8 @@ def exec(lines):
 			#if c=="ldi":print(int(line[1]))
 			if c=="store":mem[int(line[1])]=acc
 			if c=="jlt":
-				"""
-				print("JLT inst")
-				print("ACC=",acc)
-				print(line[1])
-				print(line[2])
-				print("I=",i)
-				"""
 				if(acc<float(line[1])):
-					print("TRUE")
 					i=int(line[2]-1)
-					#i=-1
-			
 	if(0):
 		print("ERROR")
 		sys.exit()
