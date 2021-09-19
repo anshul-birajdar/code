@@ -4,6 +4,7 @@ def convert(lines):
 		for j in range(0,len(lines[i])):
 			try:
 				lines[i][j]=float(lines[i][j])
+				print("I:",i,";lines[i]=",lines[i])
 			except:
 				pass
 	print(lines)
