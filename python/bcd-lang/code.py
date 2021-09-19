@@ -16,7 +16,6 @@ def main():
 	while True:
 		line=input()
 		if(line=="run"):
-			print(lines)
 			exec(lines)
 		else:
 			lines.append(line.split())
