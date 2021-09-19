@@ -7,6 +7,7 @@ def exec(lines):
 		for line in lines:
 			c=line[0]
 			if c=="add":acc+=lines[1]
+			if c=="print":print(acc)
 	except:
 		print("ERROR")
 		sys.exit()
