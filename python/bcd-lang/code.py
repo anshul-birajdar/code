@@ -1,6 +1,13 @@
+memsize=100
+acc=0
+mem=[0]*memsize
 def exec(lines):
-	#lines=lines[:-1]
-	print(lines)
+	try:
+		for line in lines:
+			c=line[0]
+			if c=="add":acc+=lines[1]
+				
+		
 def convert(lines):
 	for i in range(0,len(lines)):
 		for j in range(0,len(lines[i])):
@@ -8,7 +15,7 @@ def convert(lines):
 				lines[i][j]=float(lines[i][j])
 			except:
 				pass
-	print(lines)
+	#print(lines)
 	return lines
 			
 def main():
