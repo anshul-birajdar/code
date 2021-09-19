@@ -17,6 +17,10 @@ def exec(lines):
 			#if c=="ldi":print(int(line[1]))
 			if c=="store":mem[int(line[1])]=acc
 			if c=="jlt":
+				print("JLT inst")
+				print("ACC=",acc)
+				print(line[1])
+				print(line[2])
 				if(acc<float(line[1])):
 					i=int(line[2])
 			
