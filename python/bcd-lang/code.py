@@ -8,8 +8,8 @@ def convert(lines):
 				lines[i][j]=float(lines[i][j])
 			except:
 				pass
-	return lines
 	print(lines)
+	return lines
 			
 def main():
 	lines = []
