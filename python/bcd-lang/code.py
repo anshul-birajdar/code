@@ -20,6 +20,9 @@ def exec(lines):
 			if c=="jlt":
 				if(acc<float(line[1])):
 					i=int(line[2]-1)
+			if c=="jgt":
+				if(acc>float(line[1])):
+					i=int(line[2]-1)
 	if(0):
 		print("ERROR")
 		sys.exit()
