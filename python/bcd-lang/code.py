@@ -7,7 +7,7 @@ def exec(lines):
 	if(1):
 		#for i in range(0,len(lines)):
 		i=0
-		while(i<len(lines)):
+		while(i<len(lines)-1):
 			i+=1
 			line=lines[i]
 			c=line[0]
