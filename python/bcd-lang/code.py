@@ -1,3 +1,4 @@
+import sys
 memsize=100
 acc=0
 mem=[0]*memsize
@@ -6,6 +7,9 @@ def exec(lines):
 		for line in lines:
 			c=line[0]
 			if c=="add":acc+=lines[1]
+	except:
+		print("ERROR")
+		sys.exit()
 				
 		
 def convert(lines):
