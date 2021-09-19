@@ -14,8 +14,9 @@ def main():
 	lines = []
 	while True:
 		line=input()
+		print(line)
 		if(line=="run"):
-			lines=convert(lines)
+			print(lines)
 			exec(lines)
 		else:
 			lines.append(line.split())
