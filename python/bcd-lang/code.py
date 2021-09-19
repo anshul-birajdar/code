@@ -5,10 +5,14 @@ mem=[0]*memsize
 def exec(lines):
 	global acc,mem,memsize
 	if(1):
-		for line in lines:
+		for i in range(0,len(lines)):
+			line=lines[i]
 			c=line[0]
 			if c=="add":acc+=float(line[1])
 			if c=="print":print(acc)
+			if c=="load":acc=mem[int(line[1])]
+			if c=="store":mem[int(line[1])]=acc
+			
 	if(0):
 		print("ERROR")
 		sys.exit()
