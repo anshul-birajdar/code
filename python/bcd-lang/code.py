@@ -19,10 +19,11 @@ def exec(lines):
 			if c=="store":mem[int(line[1])]=acc
 			if c=="jlt":
 				if(acc<float(line[1])):
-					i=int(line[2]-1)
+					i=int(line[2])-1
 			if c=="jgt":
 				if(acc>float(line[1])):
-					i=int(line[2]-1)
+					i=int(line[2])-1
+			if c=="j":i=int(line[2])-1
 	if(0):
 		print("ERROR")
 		sys.exit()
