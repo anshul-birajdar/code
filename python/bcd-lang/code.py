@@ -5,7 +5,10 @@ mem=[0]*memsize
 def exec(lines):
 	global acc,mem,memsize
 	if(1):
-		for i in range(0,len(lines)):
+		#for i in range(0,len(lines)):
+		i=0
+		while(i<len(lines)):
+			i+=1
 			line=lines[i]
 			c=line[0]
 			if c=="add":acc+=float(line[1])
