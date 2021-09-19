@@ -15,6 +15,9 @@ def exec(lines):
 			if c=="print":print(acc)
 			if c=="load":acc=mem[int(line[1])]
 			if c=="store":mem[int(line[1])]=acc
+			if c=="jlt":
+				if(acc<float(line[1])):
+					i=int(line[2])
 			
 	if(0):
 		print("ERROR")
