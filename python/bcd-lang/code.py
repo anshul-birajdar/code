@@ -36,6 +36,7 @@ def main():
 	lines = []
 	while True:
 		line=input("["+str(lineno)+"]>")
+		lineno+=1
 		if(line=="run"):
 			exec(lines)
 		else:
