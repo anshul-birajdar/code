@@ -2,5 +2,6 @@ lines=[]
 while(1):
 	line=input()
 	line=line.split()
-	print(line)
+	lines.append(line)
+	print(lines)
 	
