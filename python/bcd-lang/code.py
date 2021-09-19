@@ -12,7 +12,8 @@ def exec(lines):
 			i+=1
 			line=lines[i]
 			c=line[0]
-			if c=="add":acc+=float(line[1])
+			if c=="addi":acc+=float(line[1])
+			if c=="add":acc+=float(mem[line[1]])
 			if c=="print":print(acc)
 			if c=="load":acc=mem[int(line[1])]
 			if c=="ldi":acc=float(line[1])
