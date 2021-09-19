@@ -6,7 +6,7 @@ def exec(lines):
 	global acc,mem,memsize
 	if(1):
 		#for i in range(0,len(lines)):
-		i=-1
+		i=0
 		while(i<len(lines)-1):
 			print("i=",i);
 			i+=1
