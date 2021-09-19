@@ -18,7 +18,7 @@ def main():
 		if(line=="run"):
 			exec(lines)
 		else:
-			splitted=lines.split()
+			splitted=line.split()
 			if(len(splitted)>0):
 				lines.append(splitted)
 			lines=convert(lines)
