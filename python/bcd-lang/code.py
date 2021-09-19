@@ -6,8 +6,9 @@ def exec(lines):
 	global acc,mem,memsize
 	if(1):
 		#for i in range(0,len(lines)):
-		i=0
+		i=-1
 		while(i<len(lines)-1):
+			print("i=",i);
 			i+=1
 			line=lines[i]
 			c=line[0]
