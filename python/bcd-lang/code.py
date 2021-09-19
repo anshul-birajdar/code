@@ -1,6 +1,7 @@
 def exec(lines):print(lines)
 def convert(lines):
 	for i in range(0,len(lines)-1):
+		print(i)
 		for j in range(0,len(lines[i])-1):
 			#try:
 			lines[i][j]=float(lines[i][j])
