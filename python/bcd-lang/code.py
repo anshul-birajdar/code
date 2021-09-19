@@ -16,10 +16,11 @@ def main():
 	lines = []
 	while True:
 		line=input()
-		if(line=="run"):exec(lines)
-		else:
-			lines.append(line.split())
+		if(line=="run"):
 			lines=convert(lines)
+			exec(lines)
+		lines.append(line.split())
+		lines=convert(lines)
 if(__name__=="__main__"):
 	main()
 	
