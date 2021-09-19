@@ -23,7 +23,7 @@ def exec(lines):
 			if c=="jgt":
 				if(acc>float(line[1])):
 					i=int(line[2])-1
-			if c=="j":i=int(line[2])-1
+			if c=="j":i=int(line[1])-1
 	if(0):
 		print("ERROR")
 		sys.exit()
