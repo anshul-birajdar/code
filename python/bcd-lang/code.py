@@ -1,5 +1,5 @@
 def exec(lines):
-	lines=lines[:-1]
+	#lines=lines[:-1]
 	print(lines)
 def convert(lines):
 	for i in range(0,len(lines)):
