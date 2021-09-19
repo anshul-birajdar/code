@@ -1,4 +1,6 @@
-def exec(lines):print(lines)
+def exec(lines):
+	lines=lines[:-1]
+	print(lines)
 def convert(lines):
 	for i in range(0,len(lines)):
 		for j in range(0,len(lines[i])):
