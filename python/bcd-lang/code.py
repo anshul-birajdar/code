@@ -1,6 +1,5 @@
 def exec(lines):
 	lines=lines[:-1]
-	print(lines)
 def convert(lines):
 	for i in range(0,len(lines)):
 		for j in range(0,len(lines[i])):
@@ -8,8 +7,8 @@ def convert(lines):
 				lines[i][j]=float(lines[i][j])
 			except:
 				pass
-	print(lines)
 	return lines
+	print(lines)
 			
 def main():
 	lines = []
