@@ -1,0 +1,4 @@
+echo "* Open /etc/cups/printers.conf in a text editor."
+echo "* Look for a line that says "Reason media-empty-error". Delete it."
+echo "* Save printers.conf and restart cups (sudo /etc/init.d/cups restart)."
+echo "To remove all jobs, lprm -a all"
