@@ -1,0 +1,4 @@
+mv /home/anshul/Downloads/*.pdf /home/anshul/Downloads/pdfs
+mv /home/anshul/Downloads/*.epub /home/anshul/Downloads/pdfs
+mv /home/anshul/Downloads/pdfs/anshul*.pdf /home/anshul/Downloads/school
+mv /home/anshul/Downloads/pdfs/Anshul*.pdf /home/anshul/Downloads/school
