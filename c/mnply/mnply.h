@@ -18,7 +18,9 @@ int mnply_getint(char *message)
 }
 void mnply_getnames(int players,char ***pnames,int maxname)
 {
-        for(int i=0;i<players;i++)
+	printf("Enter Name [ 0] :");
+	fgets((*pnames)[0],maxname-1,stdin);
+        for(int i=1;i<players;i++)
         {
                 (*pnames)[i]=malloc(maxname*sizeof(char));
 		printf("Enter Name [%2d] :",i+1);
