@@ -7,7 +7,10 @@ int main(void)
 {
 	while(1)
 	{
+		int start,end;
+		start=10;
+		end=20;
 		srand(time(NULL));
-		printf("%d\n",rand()%(20-10)+10);
+		printf("%d\n",rand()%(end-start)+start);
 	}
 }
