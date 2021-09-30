@@ -5,6 +5,6 @@ int mnply_rand(int start,int end)
 }
 int mnply_rolldice()
 {
-	return mnply_rand(1,6);
+	return mnply_rand(1,3);
 }
 
