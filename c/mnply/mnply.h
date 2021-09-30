@@ -13,14 +13,12 @@ int mnply_getint(char *message)
 {
 	int num;
 	printf("%s",message);
+	ungetc(*message,stdin);
 	scanf("%d\n",&num);
 	return num;
 }
 void mnply_getnames(int players,char ***pnames,int maxname)
 {
-	//printf("Enter Name [ 0] :");
-	//fgets((*pnames)[0],maxname-1,stdin);
-	//scanf("%s",*(pnames)[0]);
         for(int i=0;i<players;i++)
         {
                 (*pnames)[i]=malloc(maxname*sizeof(char));
