@@ -12,6 +12,6 @@ int main(void)
 		end=20;
 		srand(time(NULL));
 		//printf("%d\n",rand()%(end-start)+start);
-		printf("%d\n",mnply_rand(10,20));
+		printf("%d\n",mnply_rolldice());
 	}
 }
