@@ -8,6 +8,6 @@ int main(void)
 	while(1)
 	{
 		srand(time(NULL));
-		printf("%d\n",rand()%20-10);
+		printf("%d\n",rand()%(20-10)+10);
 	}
 }
