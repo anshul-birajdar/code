@@ -13,7 +13,6 @@ int mnply_getint(char *message)
 {
 	int num;
 	printf("%s",message);
-	ungetc(*message,stdin);
 	scanf("%d\n",&num);
 	return num;
 }
