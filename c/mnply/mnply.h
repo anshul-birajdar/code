@@ -20,8 +20,8 @@ void mnply_getnames(int players,char ***pnames,int maxname)
 {
         for(int i=0;i<players;i++)
         {
-                (*pnames)[i]=malloc(MAXNAME*sizeof(char));
+                (*pnames)[i]=malloc(maxname*sizeof(char));
 		printf("Enter Name [%2d] :",i+1);
-                fgets((*pnames)[i],MAXNAME-1,stdin);
+                fgets((*pnames)[i],maxname-1,stdin);
         }
 }
