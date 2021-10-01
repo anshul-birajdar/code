@@ -12,7 +12,7 @@ for i in range(0,len(namec)):
 	if namec[i] not in "aeiou":
 		namec[i]='_'
 turns=0
-while ''.join(namec) != name and turns>6:
+while ''.join(namec) != name and turns<6:
 	turns+=1
 	if turns>4:break
 	print(''.join(namec))
