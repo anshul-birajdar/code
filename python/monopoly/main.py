@@ -1,5 +1,5 @@
 import random
-with open("/usr/share/dict/words") as f:
+with open("/usr/share/dict/cracklib-small") as f:
 	wordlist = []
 	for line in f:
 		wordlist.append(line.strip())
