@@ -3,5 +3,9 @@ with open("/usr/share/dict/words") as f:
 	wordlist = []
 	for line in f:
 		wordlist.append(line.strip())
-print(random.choice(wordlist))
+name=random.choice(wordlist)
+while len(name)>6:
+	name=random.choice(wordlist)
+print(name)
+	
 
