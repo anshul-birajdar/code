@@ -13,6 +13,7 @@ int main(void)
 	{
 		for(int i=0;i<players;i++)
 		{
+			printf("%d\n",i);
 			printf("Player:\t%s\n",names[i]);
 			printf("Dice:\t%d\n",mnply_rolldice()+mnply_rolldice());
 			getchar();
