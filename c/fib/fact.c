@@ -1,5 +1,6 @@
 #define MAX 7
 #include<stdio.h>
+#include<stdlib.h>
 int fact(n)
 int n;
 {
