@@ -11,9 +11,10 @@ main(argc,argv)
 int argc;
 char **argv;
 {
+	if(argc!=2)return 1;
 	printf("no.	value\n");
 	int i;
-	for(i=1;i<=MAX;i++)
+	for(i=1;i<=atoi(argv[1]);i++)
 		printf("%d	%d\n",i,fact(i));
 	return 0;
 }
