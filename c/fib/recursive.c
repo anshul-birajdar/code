@@ -1,12 +1,13 @@
 #include<stdio.h>
-int fib(int n)
+int fib(n)
+int n;
 {
 	printf("FIB:%d\t%p\n",n,&n);
 	if(n==1)return 1;
 	if(n==2)return 1;
 	return fib(n-1) + fib(n-2);
 }
-int main(void)
+main()
 {
 	printf("no.	value\n");
 	printf("%d	%d\n",1,fib(1));
