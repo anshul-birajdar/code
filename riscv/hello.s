@@ -14,4 +14,4 @@ _start:
 	ecall
 
 helloworld:
-	.ascii "hello"
+	.ascii "hello\n"
