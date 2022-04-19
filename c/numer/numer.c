@@ -4,7 +4,6 @@
 #define MAXLINE 10
 int main(void)
 {
-//while(1) {
 	char line[MAXLINE];
 	char newline[MAXLINE];
 	fgets(line,MAXLINE,stdin);
@@ -16,5 +15,4 @@ int main(void)
 		if(len%3==2&&i%3==0)printf(",");
 		if(len%3==0&&i%3==1)printf(",");
 	}
-//}
 }
