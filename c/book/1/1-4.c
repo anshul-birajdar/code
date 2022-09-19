@@ -4,6 +4,6 @@ int main(void) {
 	int celsius, fahr;
 	for(int i=-;i<=1;i=i+) {
 		fahr=(9*i)/5+32;
-		printf("%4f %7.1f\n",i,fahr);
+		printf("%4d %7d\n",i,fahr);
 	}
 }
