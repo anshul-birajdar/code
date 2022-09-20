@@ -1,6 +1,5 @@
 #include<stdio.h>
 int main(void) {
 	char c;
-	while((c=getchar())!=EOF)
-		printf("%d",c!=EOF);
+	printf(":%d:",(c=getchar())!=EOF);
 }
