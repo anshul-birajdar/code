@@ -2,6 +2,8 @@
 #define IN 1
 #define OUT 0
 /* miniwc -- always prints l w c, ignores options */
+/* ASCII only. Counts all chars other that ' ', '\t', '\n'
+   as characters */
 int main(void)
 {
 	int c,nl,nw,nc,state;
