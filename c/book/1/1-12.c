@@ -1,10 +1,10 @@
 #include<stdio.h>
-int main(void) {
-	char c,pc;
-	c=pc='\0';
+int main(void)
+{
+	char c;
 	while((c=getchar())!=EOF) {
-		if(c==' '&&pc==' ')continue;
+		if(c==' ')c='\n';
+		if(c=='\t')c='\n';
 		putchar(c);
-		pc=c;
 	}
 }
