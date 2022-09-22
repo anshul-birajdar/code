@@ -9,7 +9,7 @@ int main(void)
 {
 	int c, wc;
 	wc = 0;
-	int l[MAX_L];
+	int l[MAXL];
 	while((c = getchar())!= EOF) {
 		if(c == ' '||c == '\n'||c == '\t') {
 			l[wc]++;
