@@ -13,7 +13,7 @@ int main(void)
 	}
 	for(int i=1;i<MAXL;i++) 
 		if(l[i]!=0) {
-			printf("%8c (%5x): ",i,i);
+			printf("%c (%5x): ",i,i);
 			for(int j=0;j<l[i];j++)
 				printf("=");
 			putchar('\n');
