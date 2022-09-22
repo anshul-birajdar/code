@@ -18,7 +18,7 @@ int main(void)
 	}
 	for(int i=1;i<MAXL;i++)
 		if(l[i]!=0) {
-			printf("%d:",i);
+			printf("%d:\t",i);
 			//printf("%d",l[i]);
 			for(int j=0;j<l[i];j++)
 				printf("*");
