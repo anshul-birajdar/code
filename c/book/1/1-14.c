@@ -17,7 +17,9 @@ int main(void)
 		else wc++;
 	}
 	for(int i=1;i<MAXL;i++)
-		if(l[i]!=0)
-			printf("%d %d\n",i,l[i]);
+		if(l[i]!=0) {
+			printf("%d:",i);
+			for(int j=0;j<l[i];j++)putchar('*');
+			putchar('\n');
+		}
 }
-
