@@ -2,7 +2,7 @@
 #define IN 1
 #define OUT 0
 #define MAXL 20
-/* prints frequency of length of words */
+/* prints histogram of length of words */
 int main(void)
 {
 	int c, wc;
@@ -17,11 +17,8 @@ int main(void)
 		else wc++;
 	}
 	for(int i=1;i<MAXL;i++)
-		if(l[i]!=0) {
-			printf("%8d: ",i);
-			//printf("%d",l[i]);
-			for(int j=0;j<l[i];j++)
-				printf("=");
-			putchar('\n');
-		}
+		printf("%8d: ",i);
+		for(int j=0;j<l[i];j++)
+			printf("=");
+		putchar('\n');
 }
