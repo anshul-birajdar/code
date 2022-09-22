@@ -1,5 +1,5 @@
 #include<stdio.h>
-int ftoc(float f);
+float ftoc(float f);
 int main(void)
 {
 	printf("%4s %7s\n","fahr","celsius");
@@ -11,10 +11,6 @@ int main(void)
 		printf("%4d %7.1f\n",i,celsius);
 	}
 }
-int ftoc(float f) {
-	float c = f;
-	c = c - 32.0;
-	c = 5.0 * c;
-	c = c / 9.0;
-	return c;
+float ftoc(float f) {
+	return((5.0/9.0)*(f-32.0));
 }
