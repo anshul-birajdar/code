@@ -21,7 +21,7 @@ int main(void)
 			printf("%8d: ",i);
 			//printf("%d",l[i]);
 			for(int j=0;j<l[i];j++)
-				printf("*");
+				printf("=");
 			putchar('\n');
 		}
 }
