@@ -16,9 +16,10 @@ int main(void)
 		}
 		else wc++;
 	}
-	for(int i=1;i<MAXL;i++)
+	for(int i=1;i<MAXL;i++) {
 		printf("%8d: ",i);
 		for(int j=0;j<l[i];j++)
 			printf("=");
 		putchar('\n');
+	}
 }
