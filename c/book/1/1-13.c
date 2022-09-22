@@ -1,22 +1,24 @@
 #include<stdio.h>
 #define IN 1
 #define OUT 0
+#define MAXL 20
 /* miniwc -- always prints l w c, ignores options */
 /* ASCII only. Counts all chars other that ' ', '\t', '\n'
    as characters */
 int main(void)
 {
-	int c,nl,nw,nc,state;
-	state=OUT;
-	nl=nw=nc=0;
-	while((c=getchar())!=EOF) {
-		nc++;
-		if(c=='\n')nl++;
-		if(c==' '||c=='\n'||c=='\t')state=OUT;
-		else if(state==OUT) {
-			state=IN;
-			nw++;
+	int c, wc;
+	wc = 0;
+	int l[MAX_L];
+	while((c = getchar())!= EOF) {
+		if(c == ' '||c == '\n'||c == '\t') {
+			l[wc]++;
+			wc=0;
 		}
+		else wc++;
 	}
-	printf("%d %d %d\n",nl,nw,nc);
+	for(int i=1;i<MAXL;i++)
+		if(l[i]!=0)
+			printf("%d %d\n",i,l[i]);
 }
+
