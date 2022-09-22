@@ -1,4 +1,5 @@
 #include<stdio.h>
+int ftoc(float f);
 int main(void)
 {
 	printf("%4s %7s\n","fahr","celsius");
