@@ -10,6 +10,7 @@ int main(void)
 	int c, wc;
 	wc = 0;
 	int l[MAXL];
+	for(int i=0;i<MAXL;i++)l[i]=0;
 	while((c = getchar())!= EOF) {
 		if(c == ' '||c == '\n'||c == '\t') {
 			l[wc]++;
