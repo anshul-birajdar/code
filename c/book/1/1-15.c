@@ -6,10 +6,12 @@ int main(void)
 	float fahr, celsius;
 	for(int i=0;i<=300;i=i+20) {
 		//celsius=(5.0/9.0)*(i-32.0);
-		celsius=ftoc(i);
+		float fi=i;
+		celsius=ftoc(fi);
 		printf("%4d %7.1f\n",i,celsius);
 	}
 }
 int ftoc(float f) {
-	return ((5.0/9.0)*(f-32.0));
+	float c = (5.0/9.0)*(f-32.0);
+	return c;
 }
