@@ -12,6 +12,9 @@ int main(void)
 	}
 }
 int ftoc(float f) {
-	float c = (5.0/9.0)*(f-32.0);
+	float c = f;
+	c = c - 32.0;
+	c = 5.0 * c;
+	c = c / 9.0;
 	return c;
 }
