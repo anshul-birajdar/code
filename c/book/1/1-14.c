@@ -20,8 +20,8 @@ int main(void)
 		if(l[i]!=0) {
 			printf("%d:",i);
 			//printf("%d",l[i]);
-			for(int j=0;j<=(l[i]);j++)
-				printf("%d",j);
+			for(int j=0;j<l[i];j++)
+				printf("*");
 			putchar('\n');
 		}
 }
