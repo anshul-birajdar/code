@@ -1,0 +1,4 @@
+#!/bin/bash
+date
+sleep 30m
+/home/anshul/code/bin/alarm
