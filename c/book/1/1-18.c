@@ -7,7 +7,6 @@ int main(void)
 	int len;
 	char line[MAXLINE], *end;
 	len=get_line(line,MAXLINE,end);
-	if(*end==' ')end--;
 }
 int get_line(char *s,int lim,char *end)
 {
