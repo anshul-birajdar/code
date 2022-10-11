@@ -1,6 +1,6 @@
 #include<stdio.h>
 #define MAXLINE 1000
-int getline(char *line,int maxline);
+int get_line(char *line,int maxline);
 void copy(char *to,char *from);
 //void rtrail(char *line);
 int main(void)
@@ -8,7 +8,7 @@ int main(void)
 	int len,max;
 	char line[MAXLINE],longest[MAXLINE];
 	max=0;
-	while((len=getline(line,MAXLINE))>0) {
+	while((len=get_line(line,MAXLINE))>0) {
 		if(len>max) {
 			max=len;
 			copy(longest,line);
@@ -16,7 +16,7 @@ int main(void)
 	if(max>0)
 		printf("%s",longest);
 }
-int getline(char *s,int lim)
+int get_line(char *s,int lim)
 {
 	int c,i;
 	for(i=0;i<lim-1&&(c=getchar())!=EOF&&c!='\n';i++)
