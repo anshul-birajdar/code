@@ -7,6 +7,7 @@ int main(void)
 	int len;
 	char line[MAXLINE], *end;
 	while((len=get_line(line,MAXLINE,end))>0) {
+		printf("%c",*end);
 		while(*end==' '||*end=='\t')end--;
 		end[1]='\0';
 		printf("%s\n",line);
