@@ -5,11 +5,12 @@ char *get_line(char *line,int maxline);
 int main(void)
 {
 	char line[MAXLINE], *end;
-	//while(*(end=get_line(line,MAXLINE))!=EOF) {
-	end=get_line(line,MAXLINE);
-	while(*end==' ')end--;
-	end[1]='\0';
-	printf("%s\n",line);
+	while(*(end=get_line(line,MAXLINE))!=EOF) {
+		//end=get_line(line,MAXLINE);
+		while(*end==' ')end--;
+		end[1]='\0';
+		printf("%s\n",line);
+	}
 }
 char *get_line(char *s,int lim)
 {
