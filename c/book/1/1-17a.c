@@ -2,7 +2,7 @@
 #define MAXLINE 1000
 int get_line(char *line,int maxline);
 void copy(char *to,char *from);
-//void rtrail(char *line);
+/* print longest input line */
 int main(void)
 {
 	int len,max;
