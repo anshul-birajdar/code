@@ -4,11 +4,12 @@ char *get_line(char *line,int maxline);
 /* removes trailing blanks and tabs and prints lines */
 int main(void)
 {
-	char line[MAXLINE];
-	char *end=get_line(line,MAXLINE);
+	char line[MAXLINE], *end;
+	end=get_line(line,MAXLINE);
 }
 char *get_line(char *s,int lim)
 {
+	char *end;
 	int c,i;
 	for(i=0;i<lim-1&&(c=getchar())!=EOF&&c!='\n';i++)
 		s[i]=c;
