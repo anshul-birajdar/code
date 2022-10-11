@@ -6,12 +6,7 @@ int main(void)
 {
 	int len;
 	char line[MAXLINE], *end;
-	while((len=get_line(line,MAXLINE,end))>0) {
-		printf("%c",*end);
-		while(*end==' '||*end=='\t')end--;
-		end[1]='\0';
-		printf("%s\n",line);
-	}
+	len=get_line(line,MAXLINE,end);
 }
 int get_line(char *s,int lim,char *end)
 {
