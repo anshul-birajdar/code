@@ -9,7 +9,8 @@ int main(void)
 		//end=get_line(line,MAXLINE);
 		while(*end==' ')end--;
 		end[1]='\0';
-		printf("%s\n",line);
+		printf("%s",line);
+		if(*line!='\0')printf("\n");
 	}
 }
 char *get_line(char *s,int lim)
