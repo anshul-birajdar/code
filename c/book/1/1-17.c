@@ -2,7 +2,7 @@
 #define MAXLINE 1000
 int get_line(char *line,int maxline);
 void copy(char *to,char *from);
-/* print longest input line */
+/* print input lines with length greater than 80 */
 int main(void)
 {
 	int len,max;
