@@ -5,7 +5,7 @@ char *get_line(char *line,int maxline);
 int main(void)
 {
 	char line[MAXLINE], *end;
-	len=get_line(line,MAXLINE,end);
+	end=get_line(line,MAXLINE);
 }
 char *get_line(char *s,int lim)
 {
