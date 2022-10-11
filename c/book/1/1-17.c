@@ -2,20 +2,16 @@
 #define MAXLINE 1000
 int get_line(char *line,int maxline);
 void copy(char *to,char *from);
-/* print input lines with length greater than 80 */
+/* print input lines with length > 80 */
 int main(void)
 {
-	int len,max;
-	char line[MAXLINE],longest[MAXLINE];
-	max=0;
+	int len;
+	char line[MAXLINE];
 	while((len=get_line(line,MAXLINE))>0) {
-		if(len>max) {
-			max=len;
-			copy(longest,line);
+		if(len>80) {
+			printf("%s",line);
 		}
 	}
-	if(max>0)
-		printf("%s",longest);
 }
 int get_line(char *s,int lim)
 {
