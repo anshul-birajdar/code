@@ -13,6 +13,7 @@ int main(void)
 			max=len;
 			copy(longest,line);
 		}
+	}
 	if(max>0)
 		printf("%s",longest);
 }
