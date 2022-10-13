@@ -6,7 +6,6 @@ int main(void)
 {
 	char line[MAXLINE], *end;
 	while(*(end=get_line(line,MAXLINE))!=EOF) {
-		//end=get_line(line,MAXLINE);
 		while(*end==' ')end--;
 		end[1]='\0';
 		printf("%s",line);
