@@ -7,9 +7,11 @@ int main(void)
 {
 	char line[MAXLINE];
 	char rev[MAXLINE];
-	int len=get_line(line,MAXLINE);
-	reverse(rev,line,len);
-	printf("%s\n",rev);
+	int len;
+	while((len=get_line(line,MAXLINE))&&!feof(stdin)) {
+		reverse(rev,line,len);
+		printf("%s\n",rev);
+	}
 }
 int get_line(char *s,int lim)
 {
