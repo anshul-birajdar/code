@@ -1,7 +1,7 @@
 #include<stdio.h>
 #define MAXLINE 1000
 char *get_line(char *line,int maxline);
-/* removes trailing blanks and tabs and prints lines */
+/* reverses the output, a line at a time */
 int main(void)
 {
 	char line[MAXLINE], *end;
