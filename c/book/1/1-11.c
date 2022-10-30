@@ -2,8 +2,9 @@
 #define IN 1
 #define OUT 0
 /* miniwc -- always prints l w c, ignores options */
-/* ASCII only. Counts all chars other that ' ', '\t', '\n'
-   as characters */
+/* test -- ASCII only. Give random input and
+   compare the same input with the program and wc. Newline
+   after a space may be counted as a word */
 int main(void)
 {
 	int c,nl,nw,nc,state;
