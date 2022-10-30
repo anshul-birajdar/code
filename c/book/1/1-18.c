@@ -10,7 +10,7 @@ int main(void)
 		while(*end==' '||*end=='\t')end--;
 		end[1]='\0';
 		printf("%s",line);
-		if(*line!='\0')printf("\n");
+		if(*line!='\0'&&*line!=' '&&*line!='\n')printf("\n");
 	}
 }
 char *get_line(char *s,int lim)
