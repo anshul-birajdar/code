@@ -6,7 +6,7 @@ int main(void)
 	char c;
 	int len=0;
 	int ts;
-	while((c=getchar)!=EOF) {
+	while((c=getchar())!=EOF) {
 		if(c=='\n') {
 			len=0;
 			putchar('\n');
