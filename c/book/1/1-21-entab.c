@@ -7,7 +7,7 @@ int main(void)
 	char c,pc;
 	c=pc='\0';
 	int spac=0;
-	int len;
+	int len=0;
 	while((c=getchar())!=EOF) {
 		if(pc==' '&&c!=' ') {
 			while(spac>=TABLEN||spac>=(TABLEN-len%TABLEN)) {
