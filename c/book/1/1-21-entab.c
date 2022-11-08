@@ -8,7 +8,7 @@ int main(void)
 	c=pc='\0';
 	int spac=0;
 	int len;
-	while(pc=c;(c=getchar())!=EOF) {
+	while((c=getchar())!=EOF) {
 		if(pc==' '&&c!=' ') {
 			while(spac>=TABLEN||spac>=(TABLEN-len%TABLEN)) {
 				putchar('\t');
@@ -22,6 +22,7 @@ int main(void)
 			putchar(c);
 			len++;
 			spac=0;
+			pc=c;
 			continue;
 		
 			if(c==' ')spac++;
@@ -29,6 +30,7 @@ int main(void)
 				putchar(c);
 				len++;
 			}
+			pc=c;
 		}	
 	}
 }
