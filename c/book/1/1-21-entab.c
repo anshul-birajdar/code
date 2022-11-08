@@ -10,7 +10,7 @@ int main(void)
 	int len=0;
 	while((c=getchar())!=EOF) {
 		if(pc==' '&&c!=' ') {
-			if(spac>TABLEN||spac>=TABLEN-(len%TABLEN))spac--;
+			//if(spac>TABLEN||spac>=TABLEN-(len%TABLEN))spac--;
 			while((spac+1)>=TABLEN||(spac+1)>=(TABLEN-len%TABLEN)) {
 				putchar('\t');
 				spac-=TABLEN-(len%TABLEN);
