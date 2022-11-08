@@ -1,6 +1,7 @@
 #include<stdio.h>
 #define TABLEN 8
-/* converts tabs to an appropriate number of spaces */
+/* entab -- converts spaces into tabs
+   and spaces (priority to spaces) */
 int main(void)
 {
 	char c;
