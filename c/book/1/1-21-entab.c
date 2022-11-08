@@ -11,7 +11,7 @@ int main(void)
 	while((c=getchar())!=EOF) {
 		if(pc==' '&&c!=' ') {
 			if(spac>TABLEN||spac>=TABLEN-(len%TABLEN)&&len%TABLEN>0)spac--;
-			while((spac+1)>=TABLEN||(spac+1)>=(TABLEN-len%TABLEN)) {
+			while((spac)>=TABLEN||(spac)>=(TABLEN-len%TABLEN)) {
 				putchar('\t');
 				spac-=TABLEN-(len%TABLEN);
 				len+=TABLEN-(len%TABLEN);
