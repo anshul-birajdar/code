@@ -26,7 +26,8 @@ int main(void)
 			continue;
 		
 			if(c==' ')spac++;
-			else {
+			if(c=='\n')spac=len=0;
+			if(c!=' '&&c!='\t'){
 				putchar(c);
 				len++;
 			}
