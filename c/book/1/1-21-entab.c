@@ -24,7 +24,7 @@ int main(void)
 			spac=0;
 			pc=c;
 			continue;
-		
+		}	
 			if(c==' ')spac++;
 			if(c=='\n')spac=len=0;
 			if(c!=' '&&c!='\t'){
