@@ -25,13 +25,13 @@ int main(void)
 			pc=c;
 			continue;
 		}	
-			if(c==' ')spac++;
-			if(c=='\n')spac=len=0;
-			if(c!=' '&&c!='\t'){
-				putchar(c);
-				len++;
-			}
-			pc=c;
-		}	
-	}
+		if(c==' ')spac++;
+		if(c=='\n')spac=len=0;
+		if(c!=' '&&c!='\t'){
+			putchar(c);
+			len++;
+		}
+		pc=c;
+	}	
 }
+
