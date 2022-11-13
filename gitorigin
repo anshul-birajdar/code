@@ -8,3 +8,9 @@
     master merges with remote master
   Local ref configured for 'git push':
     master pushes to master (up to date)
+
+
+--
+https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
