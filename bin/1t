@@ -1,5 +1,4 @@
 #!/bin/bash
 date
 sleep 1h
-killall firefox
 /home/anshul/code/bin/alarm
