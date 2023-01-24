@@ -1,0 +1,6 @@
+grade=g8
+mv /home/anshul/Downloads/*.pdf /home/anshul/Documents/pdf
+mv /home/anshul/Downloads/*.epub /home/anshul/Documents/pdf
+mv /home/anshul/Documents/pdf/anshul*.pdf /home/anshul/Documents/dlrc/$grade
+mv /home/anshul/Documents/pdf/Anshul*.pdf /home/anshul/Documents/dlrc/$grade
+mv /home/anshul/*.png /home/anshul/Pictures #scrot files
