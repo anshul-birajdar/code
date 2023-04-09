@@ -1,0 +1,2 @@
+browser linkhandler
+macro y set browser "setsid -f mpv %u" ; open-in-browser ; set browser linkhandler
